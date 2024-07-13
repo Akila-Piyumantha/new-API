@@ -11,7 +11,7 @@ app.use((req,res,next)=>{
 })
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://new-client-git-master-akila-piyumanthas-projects.vercel.app/', // or your frontend URL
+  origin: 'https://airdyna-client2.vercel.app/', // or your frontend URL
   methods: ["GET","POST","DELETE","PATCH"],
   credentials: true,
 })) 
