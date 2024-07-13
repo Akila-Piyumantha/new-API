@@ -9,6 +9,12 @@ app.use((req,res,next)=>{
     console.log(req.path,req.method)
     next()
 })
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://airdyna-client2-git-master-akila-piyumanthas-projects.vercel.app/', // or your frontend URL
+  methods: ["GET","POST","DELETE","PATCH"],
+  credentials: true,
+})) 
 
 //routes
 app.use(express.json())
